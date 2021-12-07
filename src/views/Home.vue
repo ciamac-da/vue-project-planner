@@ -7,6 +7,7 @@
       <SingleProject
       :project="project"
       @deleted = "handleDelete"
+      @completed = "handleCompleted"
        />
       </div>
     </div>
@@ -34,6 +35,10 @@ export default {
   methods: {
     handleDelete(projectId) {
      this.projects = this.projects.filter(project => project.id !== projectId)
+    },
+    handleCompleted(projectId) {
+      let p = this.projects.find(project => project.id === projectId)
+      p.complete = !p.complete
     }
   }
 }
