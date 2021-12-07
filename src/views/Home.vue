@@ -6,6 +6,7 @@
       :key="project.id">
       <SingleProject
       :project="project"
+      @deleted = "handleDelete"
        />
       </div>
     </div>
@@ -29,6 +30,11 @@ export default {
     .then(res => res.json())
     .then(data => this.projects = data)
     .catch(err => console.log(err))
+  },
+  methods: {
+    handleDelete(projectId) {
+     this.projects = this.projects.filter(project => project.id !== projectId)
+    }
   }
 }
 </script>
