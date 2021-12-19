@@ -12,7 +12,7 @@ npm run serve
 
 ### Compiles json data
 ```
-npm run start-server
+npm run server
 ```
 
 ### Compiles and minifies for production
@@ -20,5 +20,16 @@ npm run start-server
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![](./public/assets/1.jpg)
+
+![](./public/assets/2.jpg)
+
+![](./public/assets/3.jpg)
+
+![](./public/assets/4.jpg)
+
+![](./public/assets/5.jpg)
+
+![](./public/assets/6.jpg)
+
+![](./public/assets/7.jpg)
